@@ -1,6 +1,6 @@
 ---
 - name: Building the firstname-scripts docker image
-  hosts: all
+  hosts: localhost
   tasks:
    - name: remove existing image
      docker_image:
