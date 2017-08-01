@@ -11,7 +11,7 @@
   - name: Simple PUT operation
     s3:
       bucket: 'upload-from-jenkins'
-      object: README.md
-      src: README.md
+      object: built-by-jenkins-ansible.tar
+      src: built-by-jenkins-ansible.tar
       mode: put
       region: 'us-east-1'
