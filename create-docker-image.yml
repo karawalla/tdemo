@@ -1,7 +1,6 @@
 ---
 - name: Building the firstname-scripts docker image
   hosts: all
-  become: true
   tasks:
    - name: build the image
      docker_image:
