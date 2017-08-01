@@ -10,5 +10,6 @@
      docker_image:
         name: built-by-jenkins-ansible
         path: "{{workdir}}"
+        archive_path: "built-by-jenkins-ansible.tar"
         
 
