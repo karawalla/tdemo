@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Simple PUT operation
+    s3:
+      bucket: 'upload-from-jenkins'
+      object: README.md
+      src: README.md
+      mode: put
+      region: 'us-east-1'
