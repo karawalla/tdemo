@@ -2,6 +2,10 @@
 - name: Building the firstname-scripts docker image
   hosts: all
   tasks:
+   - name: remove existing image
+     docker_image:
+       name: built-by-jenkins-ansible
+       state: absent
    - name: build the image
      docker_image:
         name: built-by-jenkins-ansible
