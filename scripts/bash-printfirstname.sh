@@ -17,5 +17,5 @@ elif [ ${#NAME[@]} -eq 1 ]
 then
         echo "Invalid input format provided, please provide input(file) content  as firstname:lastname"
 else
-        echo "FIRST NAME: ${NAME[0]}"
+        echo "FIRST NAME FROM BASH SCRIPT: ${NAME[0]}"
 fi
