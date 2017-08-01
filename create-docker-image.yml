@@ -1,0 +1,10 @@
+---
+- name: Building the firstname-scripts docker image
+  hosts: all
+  tasks:
+   - name: build the image
+     docker_image:
+        name: built-by-jenkins-ansible
+        path: "{{workdir}}"
+        
+
