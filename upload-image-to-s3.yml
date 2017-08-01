@@ -3,6 +3,11 @@
   connection: local
   gather_facts: no
   tasks:
+  - name: Create S3 test bucket.
+    s3:
+      bucket: 'upload-from-jenkins'
+      mode: create
+      region: 'us-east-1'
   - name: Simple PUT operation
     s3:
       bucket: 'upload-from-jenkins'
